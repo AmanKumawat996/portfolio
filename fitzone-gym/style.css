@@ -1,0 +1,322 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;}
+header{
+    background-image: url("image/gym.png.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 500px;
+
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    margin-top:50px;
+}
+
+button{
+    background:orange;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:red;
+}
+/* Navigation Bar */
+
+nav{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+header h1{
+    transition:0.3s;
+}
+
+header h1:hover{
+    color:orange;
+    transform:scale(1.1);
+    cursor:pointer;
+}
+
+
+nav h2{
+    margin:0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:orange;
+}
+header{
+    padding:80px 20px;
+}
+
+header h2{
+    font-size:35px;
+    margin-top:20px;
+    color:orange;
+}
+
+header p{
+    font-size:20px;
+}
+/* About Section */
+
+.about{
+    padding:50px;
+    text-align:center;
+    background:#f4f4f4;
+}
+
+.about h1{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#111;
+}
+
+.about p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+
+.card{
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+    transition:0.3s;
+}
+
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+
+.card h2{
+    color:orange;
+    margin-bottom:15px;
+}
+/* Membership Section */
+
+.membership{
+    padding:50px;
+    text-align:center;
+    background:#111;
+    color:white;
+}
+
+
+.membership h1{
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+
+.plans{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+
+.plan-card{
+    background:white;
+    color:black;
+    width:250px;
+    padding:30px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+
+.plan-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.plan-card h2{
+    color:orange;
+}
+
+
+.plan-card h3{
+    margin:15px;
+}
+.trainers{
+    padding:60px;
+    text-align:center;
+    background:#0c0505;
+}
+.trainer-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+.trainer-card{
+    width:250px;
+    background:rgb(138, 23, 23);
+    padding:20px;
+    border-radius:10px;
+}
+.trainer-card img{
+    width:100%;
+    border-radius:10px;
+}
+/* Contact Section */
+
+.contact{
+    padding:60px;
+    background:#111;
+    text-align:center;
+    color:white;
+}
+
+.contact h1{
+    margin-bottom:30px;
+    font-size:40px;
+}
+
+.contact form{
+    width:60%;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.contact textarea{
+    height:150px;
+    resize:none;
+}
+/* Footer */
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h2{
+    color:orange;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+footer hr{
+    margin:20px auto;
+    width:70%;
+    border:1px solid gray;
+}
+/* ==========================
+   Responsive Design
+========================== */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        margin-top:15px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    header h1{
+        font-size:35px;
+    }
+
+    header h2{
+        font-size:24px;
+    }
+
+    header p{
+        font-size:16px;
+    }
+
+    .cards,
+    .plans,
+    .trainer-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contact form{
+        width:90%;
+    }
+
+    .card,
+    .plan-card,
+    .trainer-card{
+        width:90%;
+    }
+
+}
+html{
+    scroll-behavior: smooth;
+}
