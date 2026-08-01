@@ -1,0 +1,124 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* Body */
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+/* Calculator Box */
+
+.calculator{
+    width:340px;
+    padding:20px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Display */
+
+#display{
+    width:100%;
+    height:70px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:white;
+    text-align:right;
+    font-size:32px;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+/* Buttons Grid */
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+/* Button */
+
+button{
+    height:65px;
+    border:none;
+    border-radius:12px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    background:#ffffff;
+    transition:0.3s;
+}
+
+/* Hover Effect */
+
+button:hover{
+    background:#ff9800;
+    color:white;
+    transform:scale(1.08);
+}
+
+/* Active Effect */
+
+button:active{
+    transform:scale(0.95);
+}
+/* Operator Buttons */
+
+.operator{
+    background:#ff9800;
+    color:white;
+}
+
+.operator:hover{
+    background:#e60000;
+}
+/* Theme Button */
+
+#themeBtn{
+    position:absolute;
+    top:20px;
+    right:20px;
+    padding:10px 20px;
+    background:#222;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.dark{
+    background:#111;
+}
+
+.dark .calculator{
+    background:#222;
+}
+
+.dark #display{
+    background:#333;
+    color:white;
+}
+
+.dark button{
+    background:#444;
+    color:white;
+}
+
+.dark .operator{
+    background:orange;
+}
